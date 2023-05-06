@@ -2,6 +2,7 @@ using System.Web.Http.Cors;
 using Microsoft.AspNetCore.Mvc;
 using YahooQuotesApi;
 
+
 namespace MarketData.Controllers;
 
 [EnableCors(origins: "*", 
@@ -38,6 +39,8 @@ public class MarketData: ControllerBase
     public int Get()
     {
         Random rnd = new Random();
+// Create the linear solver with the GLOP backend.
+       
 
         return rnd.Next(100);
     }
